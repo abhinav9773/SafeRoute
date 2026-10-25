@@ -1,0 +1,20 @@
+{
+  "name": "saferoute",
+  "version": "1.0.0",
+  "description": "Adaptive disaster-resilient communication network simulator (Express + React)",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server/src/index.js",
+    "dev": "node --watch server/src/index.js",
+    "demo": "node server/src/demo.js",
+    "test": "node --test server/test/*.test.js",
+    "setup": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "build": "npm run build --prefix frontend"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
